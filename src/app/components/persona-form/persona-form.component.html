@@ -28,8 +28,11 @@
         <mat-datepicker #picker></mat-datepicker>
       </mat-form-field>
 
-      <button mat-raised-button color="primary" (click)="submit()">
+      <button mat-raised-button color="primary" *ngIf="!edit" (click)="submit()">
         Enviar
+      </button>
+      <button mat-raised-button color="primary" *ngIf="edit" (click)="update()">
+        Actualizar
       </button>
     </form>
   </div>

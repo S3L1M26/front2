@@ -1,0 +1,26 @@
+<div *ngFor="let persona of personas" class="card card-body mb-2">
+    <div class="row">
+        <div class="col-md-8">
+            <ul>
+                <li>
+                    nombre: {{persona.nombre}}
+                </li>
+                <li>
+                    apellido: {{persona.apellido}}
+                </li>
+                <li>
+                    nacimiento: {{persona.fecha_nacimiento}}
+                </li>
+            </ul>
+            <button class="btn btn-danger" (click)="deletePersona(persona.id)">
+                Borrar
+            </button>
+            <button class="btn btn-secondary" [routerLink]="['/persona/edit', persona.id]">
+                Editar
+            </button>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+    </div>
+</div>

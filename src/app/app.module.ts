@@ -6,7 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PersonaComponent } from './persona/persona.component';
+
 
 // Modulos de Angular Material
 import {MatSelectModule} from '@angular/material/select';
@@ -18,6 +18,9 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatNativeDateModule} from '@angular/material/core';
 import {DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE} from '@angular/material/core';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { PersonaListComponent } from './components/persona-list/persona-list.component';
+import { PersonaComponent } from './components/persona-form/persona-form.component';
 
 
 const MY_FORMATS = {
@@ -36,7 +39,9 @@ const MY_FORMATS = {
 @NgModule({
   declarations: [
     AppComponent,
-    PersonaComponent
+    PersonaListComponent,
+    NavbarComponent,
+    PersonaComponent,
   ],
   imports: [
     BrowserAnimationsModule,

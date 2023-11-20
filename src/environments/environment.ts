@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:3058'
+  apiUrl: 'https://disruptivasback-yotf2bwr3q-uc.a.run.app'
 };
 
 /*
